@@ -1,13 +1,13 @@
 const getAllTasks = (req, res) => {
-	res.send('get all items');
+	res.send('get all tasks');
 };
 
 const createTask = (req, res) => {
-	res.send('create new task');
+	res.send(req.body);
 };
 
 const getOneTask = (req, res) => {
-	res.send('get one task');
+	res.send({ id: req.params.id });
 };
 
 const updateTask = (req, res) => {
